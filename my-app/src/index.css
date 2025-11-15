@@ -1,0 +1,177 @@
+body{
+     background-color:   #8ec0e2;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(17, 52, 66);
+
+    
+
+    padding: 5px;
+
+}
+nav input{
+    width: 250px;
+    text-decoration: none;
+    padding: 9px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    background: white
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+nav button.vibrate-button:hover {
+    width: 90px;
+    height: 40px;
+    background-color: rgb(238, 9, 9); /* Red background */
+    border: none;
+    border-radius: 12px; /* Rounded corners */
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+    animation:vibrate 0s;
+}
+
+/* Vibrate animation */
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(5px); }
+}
+
+/* Add hover effect to the button */
+nav button.vibrate-button {
+    width: 90px;
+    height: 40px;
+    background-color: rgb(238, 9, 9); /* Red background */
+    border: none;
+    border-radius: 12px; /* Rounded corners */
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+    animation: vibrate 0.5s linear infinite;
+}
+
+nav ul{
+    display: flex;
+    gap: 11px;
+}
+ul a{
+    text-decoration: none;
+}
+.head{
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    gap: 41px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 320px;
+    box-shadow: 0px 0px 4px 4px;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 21px;
+    border: 1px solid rgb(236,236,236);
+}
+.card img{
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.card .title{
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: -7px;
+
+}
+.card .title:hover{
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.card .Content{
+    padding: 6px;
+}
+
+.card button{
+    background-color: rgb(29,162,214);
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 28px;
+    color: white;
+    font-size: 13px;
+    border-radius: 2px;
+}
+.categorybtn{
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+}
+.categorybtn button{
+    gap: 11px;
+    width: 130px;
+    height: 33px;
+    background-color: rgb(238, 9, 9);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 18px;
+    color: white;
+    cursor: pointer;
+    padding: 2px;
+}
+.news{
+    color: aliceblue;
+    transition: all 1s;
+}
+.news:hover{
+    text-decoration: underline;
+    transform: scale(0.9);
+}
+.trending{
+    color: aliceblue;
+    transition: all 1s;
+}
+.trending:hover{
+    text-decoration: underline;
+    transform: scale(0.9);
+
+}
+.trend_news{
+    color: aliceblue;
+}
+.btn-top{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: all 1s;
+}
+.btn-top:hover {
+    transform: scale(0.9);
+  }
+  .url{
+    justify-content: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .readmore{
+    transition: all 1s;
+  }
+  .readmore:hover{
+    transform: scale(1.1);
+  }
